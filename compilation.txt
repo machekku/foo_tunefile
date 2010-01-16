@@ -1,0 +1,1 @@
+To compile, download Foobar2000 SDK and place foo_tunefile directory in SDK's foobar2000 directory, next to sample plugins. Compilation requires MS Visual C++ 2005.
