@@ -22,13 +22,12 @@
 #include "../SDK/foobar2000.h"
 #include "../helpers/helpers.h"
 #include "resource.h"
-#include "ipc/defines.h"
 
 #include <windows.h>
 #include <stdio.h>
 
 #define PLUGIN_NAME "Tune File"
-#define PLUGIN_VERSION "0.1"
+#define PLUGIN_VERSION "0.2-dev"
 
 DECLARE_COMPONENT_VERSION(PLUGIN_NAME, PLUGIN_VERSION,
 	"Tune File plugin\n"
@@ -109,13 +108,21 @@ public:
 	void new_track(metadb_handle_ptr info) {
 		bool old_in_library = in_library;
 		in_library = static_api_ptr_t<library_manager>()->is_item_in_library(info);
-		info->format_title(0, saved_info, titleformat, 0);
+		//info->format_title(0, saved_info, titleformat, 0);
+		static_api_ptr_t<playback_control>()->playback_format_title_ex(info, NULL, saved_info, titleformat, NULL, playback_control::display_level_all);
 		if (cfg_library_only && old_in_library && !in_library) {
 			stop();
 		}
 		else {
 			play();
 		}	
+	}
+
+	void dynamic_info_track(const file_info&) {
+		metadb_handle_ptr track;
+		if (static_api_ptr_t<playback_control>()->get_now_playing(track)) {
+			new_track(track);
+		}
 	}
 
 	void stop()
@@ -313,17 +320,21 @@ public:
 			tune_file.pause(paused);
 	}
 
+	void on_playback_dynamic_info_track(const file_info& fi) {
+		if (cfg_enabled)
+			tune_file.dynamic_info_track(fi);
+	}
+
 	unsigned get_flags() {
-		return flag_on_playback_new_track | flag_on_playback_stop | flag_on_playback_pause;
+		return flag_on_playback_new_track | flag_on_playback_stop | flag_on_playback_pause | flag_on_playback_dynamic_info_track;
 	}
 
 	void on_playback_starting(play_control::t_track_command, bool) {}
-	void on_playback_seek(double) {};
-	void on_playback_edited(metadb_handle_ptr) {};
-	void on_playback_dynamic_info(const file_info&) {};
-	void on_playback_dynamic_info_track(const file_info&) {};
-	void on_playback_time(double) {};
-	void on_volume_change(float) {};
+	void on_playback_seek(double) {}
+	void on_playback_edited(metadb_handle_ptr) {}
+	void on_playback_dynamic_info(const file_info&) {}
+	void on_playback_time(double) {}
+	void on_volume_change(float) {}
 };
 
 
