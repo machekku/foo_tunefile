@@ -1,22 +1,23 @@
 /*
- * Copyright (C) 2008  Maciej Niedzielski
- *
- * Permission is hereby granted, free of charge, to any person
- * obtaining a copy of this software and associated documentation
- * files (the "Software"), to deal in the Software without
- * restriction, including without limitation the rights to use,
- * copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following
- * conditions:
- *
- * This Software is distributed with NO WARRANTY OF ANY KIND.  No author or
- * distributor accepts any responsibility for the consequences of using it,
- * or for whether it serves any particular purpose or works at all, unless
- * he or she says so in writing.
- *
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
+ * Copyright (C) 2008-2010  Maciej Niedzielski
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
  */
 
 #include "../SDK/foobar2000.h"
@@ -31,7 +32,6 @@
 
 DECLARE_COMPONENT_VERSION(PLUGIN_NAME, PLUGIN_VERSION,
 	"Tune File plugin\n"
-	"Copyright (C) 2008  Maciej Niedzielski\n"
 	"http://machekku.uaznia.net/foobar2000/tunefile/\n\n"
 
 	"This plugin writes information about current song "
@@ -39,22 +39,25 @@ DECLARE_COMPONENT_VERSION(PLUGIN_NAME, PLUGIN_VERSION,
 	"Information may be formatted using title formatting.\n\n\n"
 
 
-	"Permission is hereby granted, free of charge, to any person "
-	"obtaining a copy of this software and associated documentation "
-	"files (the \"Software\"), to deal in the Software without "
-	"restriction, including without limitation the rights to use, "
-	"copy, modify, merge, publish, distribute, sublicense, and/or sell "
-	"copies of the Software, and to permit persons to whom the "
-	"Software is furnished to do so, subject to the following "
-	"conditions:\n\n"
+	"Copyright (C) 2008-2010  Maciej Niedzielski\n\n"
 
-	"This Software is distributed with NO WARRANTY OF ANY KIND.  No author or "
-	"distributor accepts any responsibility for the consequences of using it, "
-	"or for whether it serves any particular purpose or works at all, unless "
-	"he or she says so in writing.\n\n"
-	
-	"The above copyright notice and this permission notice shall be "
-	"included in all copies or substantial portions of the Software."
+	"Permission is hereby granted, free of charge, to any person obtaining a copy "
+	"of this software and associated documentation files (the \"Software\"), to deal "
+	"in the Software without restriction, including without limitation the rights "
+	"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell "
+	"copies of the Software, and to permit persons to whom the Software is "
+	"furnished to do so, subject to the following conditions:\n\n"
+
+	"The above copyright notice and this permission notice shall be included in "
+	"all copies or substantial portions of the Software.\n\n"
+
+	"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
+	"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+	"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+	"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+	"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, "
+	"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN "
+	"THE SOFTWARE."
 )
 
 
