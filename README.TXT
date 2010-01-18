@@ -1,7 +1,11 @@
 foo_tunefile
-Version 0.1
-
+Version: 0.2-dev
 Author: Maciej Niedzielski <http://machekku.uaznia.net/>
+
+
+Foobar2000 plugin that writes current song information into a file.
+Format is specified using title formatting.
+
 
 Latest version and information:
 * <http://machekku.uaznia.net/foobar2000/tunefile/>
@@ -11,7 +15,3 @@ Requirements:
 
 License:
 * see LICENSE.TXT
-
-This plugin writes information about current song
-to be saved in a user-specified file.
-Information may be formatted using title formatting.

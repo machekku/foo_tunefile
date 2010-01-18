@@ -34,9 +34,8 @@ DECLARE_COMPONENT_VERSION(PLUGIN_NAME, PLUGIN_VERSION,
 	"Tune File plugin\n"
 	"http://machekku.uaznia.net/foobar2000/tunefile/\n\n"
 
-	"This plugin writes information about current song "
-	"to be saved in a user-specified file."
-	"Information may be formatted using title formatting.\n\n\n"
+	"This plugin that writes current song information into a file. "
+	"Format is specified using title formatting.\n\n\n"
 
 
 	"Copyright (C) 2008-2010  Maciej Niedzielski\n\n"
